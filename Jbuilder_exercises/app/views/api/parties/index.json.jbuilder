@@ -1,4 +1,4 @@
-# json.guests do 
+
   @parties.each do |party|
     json.extract! party, :name, :location
     json.guests do 
