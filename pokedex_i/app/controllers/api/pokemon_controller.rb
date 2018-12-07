@@ -1,16 +1,16 @@
 class Api::PokemonController < ApplicationController
   def index
     @pokemon = Pokemon.all
-    render json: @pokemon
+    render :index
   end
 
   def show
     @pokemon = Pokemon.find_by(id: params[:id])
     render :show
   end
-  
-  # private 
+
+  # private
   # def pokemon_params
   #   params.require().permit()
-  # end 
-end 
+  # end
+end
